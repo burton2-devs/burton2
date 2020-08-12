@@ -1,7 +1,8 @@
 // When the user scrolls down 170px from the top of the document, 
 // fade in smaller navigation bar
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {scrollFunction()};
 
+window.addEventListener("scroll", scrollFunction);
 
 
 

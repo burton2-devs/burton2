@@ -4,27 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>B2 - people</title>
-  <meta name="description" content="a website for the second floor of Burton-Conner, B2">
+  <meta name="description" content="the residents of B2">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js"></script>
-  <script src="js/yeartab.js"></script>
+  <script src="js/sticky.js"></script>
 
 <!-- fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kulim+Park:Regular,Bold,Semibold">
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Stylish:Regular,Bold,Semibold"> -->
-
-<!-- ig icon -->
-  <script src="https://kit.fontawesome.com/8a31913980.js" crossorigin="anonymous"></script> 
-
-  <style>
-    /*
-    h1 - title 
-    h2 - subtitle
-    h3 - header 
-    h4 - sub-header*/
-  </style>
-
-</head>
 
 
 
@@ -33,24 +19,13 @@
 <navigation id="top" w3-include-HTML="include/navigation-mobile.html"></navigation>
 <script>w3.includeHTML();</script>
 <script src="js/nav-script.js"></script>
+<!-- INCLUDE RIGHT SIDEBAR -->
+<div id="top" w3-include-HTML="include/right-sidebar.html"></div>
+
 
 
 
 <body>
-
-<!-- RIGHT SIDEBAR -->
-  <div id="side-box2" class="w3-hide-small">
-    <div id="rightbar">
-      <br><br><br><br><br>
-      <p>idrk what to put here</p>
-      <br><br><br>
-      <p>heeeello</p>
-      <br><br><br>
-    </div>
-  </div>
-
-
-
 <!-- MAIN STUFF -->
   <div id="main-box">
     <div id="main-sub-box1">
@@ -59,7 +34,7 @@
     </div>
 
     <div id="sticky-tab" class="year-tab-box">
-      <a href="people.html" class="year-tab">current</a>
+      <a href="people.html" class="year-tab year-active">current</a>
       <a href="2021.html" class="year-tab">2021</a>
       <a href="2022.html" class="year-tab">2022</a>
       <a href="2023.html" class="year-tab">2023</a>

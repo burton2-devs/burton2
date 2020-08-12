@@ -43,13 +43,13 @@ document.body.onload = function () {
     console.log('2 loaded');
     var logo = document.getElementById("main-logo");
 
-    logo.addEventListener("mouseover", function(event) { 
+    logo.addEventListener("mouseover", function() { 
         console.log("hover") 
         logo.src = "img/main_logo_hover.png" 
         // highlight the logo
         // logo.style.opacity = "1";
     })
-    logo.addEventListener("mouseout", function(event) {   
+    logo.addEventListener("mouseout", function() {   
         console.log("hover")  
         logo.src = "img/main_logo.png" 
         // logo.style.opacity = "0";

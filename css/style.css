@@ -453,7 +453,6 @@ body {
 .bio-bio-box {
     display: block;
     text-align: left;
-    vertical-align: top;
 }
 
 .bio-pic {
@@ -462,3 +461,30 @@ body {
     max-height: 100%;
     max-width: 100%;
 }
+
+.year-tab-box{
+    text-align: center;
+    margin-left: var(--sidebar-width);
+    margin-right: var(--sidebar-width);
+
+}
+.year-tab {
+    font-size: 25px;
+    text-decoration: none;
+    color: var(--scarlet-color);
+    display: inline-block;
+    margin: none;
+    padding: 8px 15px;
+}
+#edit-bio{
+    background-color: var(--teal-color);
+    color: white;
+}
+
+
+
+#sticky-tab.fixed {
+    position: fixed;
+    top: 0;
+}
+And then your jQuery would look like this:

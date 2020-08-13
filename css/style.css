@@ -48,7 +48,9 @@ h4 {font-size: 20px;}
 }
 #main-sub-box2 {
     border: greenyellow 2px dashed;
-
+}
+#sticky-tab {
+    border: greenyellow 2px dashed;
 } */
 /* borders */
 
@@ -137,9 +139,6 @@ body {
 
 .bc-link {
     vertical-align: middle;
-    font-size: 12px;
-    text-decoration: none;
-    text-emphasis: none;
     color: gray;
 }
 
@@ -154,6 +153,7 @@ body {
     line-height: 3em;
     margin-left: var(--sidebar-width);
     margin-right: var(--sidebar-width);
+    padding: 10px 10px;
 }
 #main-sub-box2 {
     text-align: left;
@@ -409,28 +409,32 @@ body {
 } */
 .footer-div {
     background-color: rgb(196, 196, 196);
-    position:absolute;
-    /* bottom:0; */
+    /* height: 80px; */
     width:100%;
-    height:160px;   /* Height of the footer */
-    /* padding:10px; */
+    margin-bottom: -40px;
+    padding: 20px 0px;
+    /* padding-top: 10px; */
+    
 }
 .footer-txt {
-    color: rgba(235, 235, 235, .75);
-    font-size: 20px;
-    text-decoration: none;
+    color: rgba(88, 88, 88, 0.75);
+    font-size: 18px;
     margin: none;
     padding: 8px 15px;
-    line-height: 1.2em;
+    line-height: 1.2em; 
 }
 
 .to-top {
     display: block;
     color: gray;
-    font-size: 15px;
+    font-size: 18px;
     text-decoration: none;
+    line-height: .25em;
 }
-
+#to-top-div {
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
 
 
 .bio-container {
@@ -486,29 +490,51 @@ body {
     margin-left: var(--sidebar-width);
     margin-right: var(--sidebar-width);
     background-color: white;
-
+    padding: 5px;
 }
 .year-tab {
     font-size: 25px;
     text-decoration: none;
     color: var(--scarlet-color);
     display: inline-block;
-    margin: none;
-    padding: 8px 15px;
+    margin: -4px;
+    padding: 8px 22px;
+    background-color: white;
+    border: none;
+    font-family: 'Josefin Sans';
+    /* border: yellowgreen 1px dashed; */
+    outline:none;
 }
+.year-tab:hover {
+    background-color: var(--pink-color);
+}
+
+
 #edit-bio{
     background-color: var(--teal-color);
     color: white;
 }
 
-
+#all-bio-container {
+    padding-top: 30px;
+}
 .year-active {    
-    background-color: var(--scarlet-color);
-    color: white;
+    /* background-color: var(--scarlet-color); */
+    /* color: white; */
+    text-decoration: underline;
+    font-weight: bold;
 }
 #sticky-tab.fixed {
-    position: fixed;
+    position: sticky;
     top: 0;
-    text-align: center;
+    margin-left: var(--sidebar-width);
+    margin-right: var(--sidebar-width);
 }
-And then your jQuery would look like this:
+
+
+.biography {
+    display: none;
+}
+.visible-year {
+    display: block;
+}

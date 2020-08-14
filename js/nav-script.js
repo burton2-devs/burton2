@@ -11,7 +11,6 @@ var hmob = 180;
 
 document.body.onload = function () {
     
-    console.log("1 loaded");
     nav = document.getElementById("side-box");
     sb = document.getElementsByClassName("sidebar-item");
     
@@ -41,17 +40,14 @@ document.body.onload = function () {
     h = nav.offsetHeight;
     y = h - hmob;
 
-    console.log('2 loaded');
     var logo = document.getElementById("main-logo");
 
     logo.addEventListener("mouseover", function() { 
-        console.log("hover") 
         logo.src = "img/main_logo_hover.png" 
         // highlight the logo
         // logo.style.opacity = "1";
     })
     logo.addEventListener("mouseout", function() {   
-        console.log("hover")  
         logo.src = "img/main_logo.png" 
         // logo.style.opacity = "0";
 })
@@ -71,14 +67,10 @@ function scrollFunction() {
         y = h - hmob;
         h = h - extra
         
-        console.log("CLASSES: "+nav.classList);
         let scroll = document.documentElement.scrollTop;
-        console.log("y="+hmob);
-        console.log("scroll="+scroll);
 
         if (scroll > h) {
             document.getElementById('mobile-nav').style.opacity = '1';
-            console.log(document.getElementById('mobile-nav'));       
         }
         if (scroll < h) {
             document.getElementById('mobile-nav').style.opacity = '0';

@@ -14,7 +14,7 @@
     --h1-mob: 100px;
     --h2-mob: 80px;
     --h3-mob: 70px;
-    --h4-mob: 55px;
+    --h4-mob: 60px;
     --p-mob: 55px;
 }
 /* body {
@@ -65,7 +65,7 @@ p, .p {
     line-height: 1em;
 }
 /* borders */
-/* #main-box {
+#main-box {
     border: blue 2px solid;
 }
 #main-sub-box0 {
@@ -85,7 +85,7 @@ p, .p {
 }
 #sticky-tab {
     border: greenyellow 2px dashed;
-} */
+}
 /* borders */
 
 
@@ -314,22 +314,14 @@ body {
     font-size: 111px;
     font-weight: 500;
 }
-.nav-span {
-    color: white;
-    
-    line-height: 190px; /* must be same as .mob-nav height */
-    font-size: 100px;
-    text-decoration: none;
-    padding-right: 50px;
-}
 .nav-home {
     float: right;
     font-size: 80px;
 }
 .main-logo-nav {
-    position: relative;
-    vertical-align: bottom;
-    max-height: 90%;
+    /* border: red 2px dashed; */
+    float: left;
+    max-height: 100%;
     
 }
 .nav-padding {
@@ -502,7 +494,7 @@ body {
     
     #main-box {
         width: 100%;
-        margin-top: 600px;
+        margin-top: 575px;
     }
 
     
@@ -513,7 +505,9 @@ body {
         /* margin-top: 180px; */
     }
     #main-sub-box1 {
-        line-height: 3em;
+        border: peachpuff 3px solid;
+        line-height: 6.5em;
+        height: auto;
         margin:0px;
         padding: 0px;
         margin-top: 180px;
@@ -521,8 +515,8 @@ body {
     
     #main-sub-box2 {
         text-align: left;
-        width: 80%;
-        line-height: 3em;
+        width: 85%;
+        line-height: 3.2em;
         margin:auto;
         padding: 0px;
     }
@@ -570,11 +564,84 @@ body {
         height: 36px;
     }
     .up-nav {
-        height: 40px;
+        height: 50px;
         color: white;
+        position: relative;
+        top: 45px;
+    }
+    #nav-to-top{
+        height: 100%;
+        width: 200px;
+        text-align: center;
+    }
+    #nav-to-top:hover {
+        background-color: rgba(0, 0, 0, 0.25);
     }
     .scroll-opacity {
         opacity: 0;
+    }
+    .year-tab {
+        display: block;
+        width: 400px;
+        font-size: var(--h3-mob);
+        margin: auto;
+    }
+    .year-tab-box{
+        text-align: center;
+        margin: auto;
+        background-color: white;
+        padding: 5px;
+    }
+    #sticky-tab.fixed {
+        position: absolute;
+        
+        margin: auto;
+    }
+    .bio-container{
+        border: red dashed 3px;
+        margin: auto;
+        padding: 10px 10px;
+        padding-right: 0;
+        height: 350px;
+    }
+    
+    .bio-pic-box {
+        border: green dashed 3px;
+        display: inline-block;
+        /* width: 200px; */
+        width: 30% ;
+        height: 100% ;
+        text-align: right;
+    }
+    .bio-text-box {
+        border: pink dashed 3px;
+        display: inline-block;
+        width: 57% ;
+        vertical-align: top;
+        text-align: left;
+        padding-top: 4px;
+    }
+    .bio-text{
+        font-weight: bold; 
+        font-size: var(--p-mob);
+    }
+    #bio-bio{font-size: 40px;}
+
+    .bio-name-box{
+        text-align: left;
+        display: block; 
+    }
+    .bio-bio-box {
+        display: block;
+        text-align: left;
+    }
+
+    .bio-pic {
+        /* max-width: 100%;
+        min-width: 100%; */
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
     }
     .w3-hide-small{display:none!important}
     .w3-mobile{display:block;width:100%!important}

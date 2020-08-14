@@ -1,5 +1,5 @@
 window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
+	window.scrollTo(0, 0);
 }
 
 
@@ -8,46 +8,32 @@ var PASSWORDalt = "2CANS";
 
 
 function password() {
-    var frm = document.getElementById("pword");
-    var pw = frm.elements[0].value;
-    if (pw == PASSWORD || pw == PASSWORDalt){
+	var pw = document.getElementById("pword").value;
+	
+	if (pw == PASSWORD || pw == PASSWORDalt){
         window.location.href = "index2.html ";
     }
     else {
         console.log("wrong password");
         console.log(pw);
-    }
+	}
 }
 
+// submits password with the enter key
+document.addEventListener("keypress", function(event) {
+	// Number 13 is the "Enter" key on the keyboard
+	if (event.key === "Enter") {
+	  // Cancel the default action, if needed
+	  event.preventDefault();
+	  // Trigger the button element with a click
+	  document.getElementById("submitButton").click();
+	}
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
 
 /* W3.JS 1.04 April 2019 by w3schools.com */
-"use strict";
+// "use strict";
 var w3 = {};
 w3.hide = function (sel) {
   w3.hideElements(w3.getElements(sel));

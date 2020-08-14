@@ -19,6 +19,7 @@ function password() {
 	}
 }
 
+
 // submits password with the enter key
 document.addEventListener("keypress", function(event) {
 	// Number 13 is the "Enter" key on the keyboard
@@ -31,6 +32,8 @@ document.addEventListener("keypress", function(event) {
 });
 
 	
+
+
 
 /* W3.JS 1.04 April 2019 by w3schools.com */
 // "use strict";
@@ -228,6 +231,7 @@ w3.sortHTML = function(id, sel, sortvalue) {
   }
 };
 
+
 w3.includeHTML = function(cb) {
   var z, i, elmnt, file, xhttp;
   z = document.getElementsByTagName("*");
@@ -251,6 +255,8 @@ w3.includeHTML = function(cb) {
   }
   if (cb) cb();
 };
+
+
 w3.getHttpData = function (file, func) {
   w3.http(file, function () {
     if (this.readyState == 4 && this.status == 200) {

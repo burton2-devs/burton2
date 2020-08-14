@@ -9,7 +9,7 @@ TO-DO LIST
 
 MAINTAINING THE BURTON 2 WEBSITE
 ********************************
-info about the website 
+when adding new pages update nav-script.js function that sets active page in the navigation
 
 Updating pages
 ===============

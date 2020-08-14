@@ -46,7 +46,7 @@ p {font-size: 45px;}
 }
 
 /* Josefin Sans variable font weight (range: 100-700) */
-body,p,h1,h2,h3,h4,h5,h6 {font-family: 'Josefin Sans', serif;} /* change to sans-serif when readt */
+body,p,h1,h2,h3,h4,h5,h6 {font-family: 'Josefin Sans', serif; } /* change to sans-serif when readt */
 h1, #title {
     font-size: var(--h1-font);
     font-weight: 700;
@@ -57,15 +57,18 @@ h2 {
 h3, .h3 {
     font-size: var(--h3-font);
     font-weight: 600;
+    line-height: 1.1em;
+    margin-bottom: -15px;
 }
 h4 {font-size: var(--h4-font);}
 p, .p {
     font-size: var(--p-font);
     font-weight: 375;
-    line-height: 1em;
+    line-height: 1.2em;
+    margin-bottom: 20px;
 }
 /* borders */
-#main-box {
+/* #main-box {
     border: blue 2px solid;
 }
 #main-sub-box0 {
@@ -85,7 +88,7 @@ p, .p {
 }
 #sticky-tab {
     border: greenyellow 2px dashed;
-}
+} */
 /* borders */
 
 

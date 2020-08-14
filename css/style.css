@@ -487,7 +487,10 @@ body {
     }
     h1, #title {font-size: var(--h1-mob);}
     h2 {font-size: var(--h2-mob);}
-    h3 {font-size: var(--h3-mob);}
+    h3 {
+        font-size: var(--h3-mob);
+        margin-bottom: -40px;
+    }
     h4 {font-size: var(--h4-mob);}
     p {font-size: var(--p-mob);}
     .to-top {
@@ -497,7 +500,7 @@ body {
     
     #main-box {
         width: 100%;
-        margin-top: 575px;
+        margin-top: 700px;
     }
 
     
@@ -508,7 +511,6 @@ body {
         /* margin-top: 180px; */
     }
     #main-sub-box1 {
-        border: peachpuff 3px solid;
         line-height: 6.5em;
         height: auto;
         margin:0px;
@@ -601,7 +603,6 @@ body {
         margin: auto;
     }
     .bio-container{
-        border: red dashed 3px;
         margin: auto;
         padding: 10px 10px;
         padding-right: 0;
@@ -609,7 +610,6 @@ body {
     }
     
     .bio-pic-box {
-        border: green dashed 3px;
         display: inline-block;
         /* width: 200px; */
         width: 30% ;
@@ -617,7 +617,6 @@ body {
         text-align: right;
     }
     .bio-text-box {
-        border: pink dashed 3px;
         display: inline-block;
         width: 57% ;
         vertical-align: top;

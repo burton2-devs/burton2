@@ -6,7 +6,28 @@
     --gray-color: rgb(198, 204, 204);
     --sidebar-width: 230px;
     --small-screen-width: 830px;
+    --h1-font: 60px;
+    --h2-font: 40px;
+    --h3-font: 30px;
+    --h4-font: 20px;
+    --p-font: 20px;
+    --h1-mob: 100px;
+    --h2-mob: 80px;
+    --h3-mob: 70px;
+    --h4-mob: 55px;
+    --p-mob: 55px;
 }
+/* body {
+    padding: 0px;
+    margin: 0px;
+}
+h1, #title {font-size: 100px;}
+h2 {font-size: 40px;}
+h3 {font-size: 60px;}
+h4 {font-size: 45px;}
+p {font-size: 45px;}
+.to-top {font-size: 38px;} */
+
   
 .tealColor {
     color: var(--teal-color);
@@ -24,12 +45,25 @@
     color: var(--gray-color);
 }
 
-
+/* Josefin Sans variable font weight (range: 100-700) */
 body,p,h1,h2,h3,h4,h5,h6 {font-family: 'Josefin Sans', serif;} /* change to sans-serif when readt */
-h1 {font-size: 60px;}
-h2 {font-size: 40px;}
-h3 {font-size: 28px;}
-h4 {font-size: 20px;}
+h1, #title {
+    font-size: var(--h1-font);
+    font-weight: 700;
+}
+h2 {
+    font-size: var(--h2-font);
+}
+h3, .h3 {
+    font-size: var(--h3-font);
+    font-weight: 600;
+}
+h4 {font-size: var(--h4-font);}
+p, .p {
+    font-size: var(--p-font);
+    font-weight: 375;
+    line-height: 1em;
+}
 /* borders */
 /* #main-box {
     border: blue 2px solid;
@@ -99,7 +133,7 @@ body {
 }
 
 .sidebar-item {
-    font-size: 30px;
+    font-size: var(--h3-font);
     text-decoration: none;
     color: white;
     display: block;
@@ -108,7 +142,10 @@ body {
 }
 .fab {
     padding: 2px 44px;
-    font-size: 32px;
+}
+.ig-icon {
+    vertical-align: middle;
+    height: 32px;
 }
 .sidebar-item:hover, .active:hover {
     color: var(--pink-color);
@@ -116,10 +153,10 @@ body {
 
 }
 .active {
-    font-weight: bold;
+    font-size: var(--h3-font);
+    font-weight: 700;
     color: white;
     background-color: var(--teal-color);
-    font-size: 30px;
     text-decoration: none;
     display: block;
     margin: none;
@@ -175,8 +212,6 @@ body {
 }
 
 #title {
-    font-size: 60px;
-    font-weight: bold;
     padding: 0px;
     margin: 0;
     vertical-align: middle;
@@ -217,109 +252,6 @@ body {
 
 
 .w3-hide{display:none!important}
-
-/* @media (max-width:1205px){.w3-auto{max-width:95%}} */
-
-@media (max-width:1030px){
-    body {
-        padding: 0px;
-        margin: 0px;
-    }
-    /*
-    h1 - title 
-    h2 - subtitle
-    h3 - header 
-    h4 - sub-header*/
-    h1 {font-size: 80px;}
-    h2 {font-size: 40px;}
-    h3 {font-size: 60px;}
-    h4 {font-size: 45px;}
-    p {font-size: 45px;}
-    .to-top {font-size: 38px;}
-    .bc-link {font-size: 38px;}
-    #main-box {
-        width: 100%;
-        margin-top: 600px;
-    }
-
-    
-    #main-sub-box0 {
-        line-height: 3em;
-        margin:0px;
-        padding: 0px;
-        /* margin-top: 180px; */
-    }
-    #main-sub-box1 {
-        line-height: 3em;
-        margin:0px;
-        padding: 0px;
-        margin-top: 180px;
-    }
-    
-    #main-sub-box2 {
-        text-align: left;
-        width: 80%;
-        line-height: 3em;
-        margin:auto;
-        padding: 0px;
-    }
-    #main-pic {
-        max-width: 100%;
-        max-height: 100%;
-        min-width: 100%;
-        min-height: 100%;
-        display: block;
-    }
-    .main-logo {
-        max-width: 450px;
-        max-height: 450px;
-    }
-    .footer-div {
-        background-color: var(--teal-color);
-    }
-    .footer-txt {
-        color: rgba(235, 235, 235, .75);
-    }
-    
-    #side-box {
-        width: 100%;
-        height: auto;
-        position: absolute;
-        padding: 0;
-    }
-    #sidebar {
-        width: 300px;
-        display: inline-block;
-        margin-top: 0px;
-        vertical-align: top;
-    }
-    .sidebar-item, .active {
-        font-size: 58px;
-        line-height: 1.2em;
-        padding: 8px 16px;
-    }
-    
-    .fab {font-size: 60px; line-height: 1.3em;}
-    
-
-    .scroll-opacity {
-        opacity: 0;
-    }
-    .w3-hide-small{display:none!important}
-    .w3-mobile{display:block;width:100%!important}
-}
-
-
-/* @media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}} */
-@media (min-width:1030px){
-    .w3-hide-large{display:none!important}
-    #side-box {display: block}
-    .visuallyhidden {
-        opacity: 100;
-    }
-
-}
-/* @media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}} */
 
 
 #side-box-mobile {
@@ -378,7 +310,10 @@ body {
     opacity: 0;
     transition: .4s;
 }
-
+#nav-title {
+    font-size: 111px;
+    font-weight: 500;
+}
 .nav-span {
     color: white;
     
@@ -393,9 +328,9 @@ body {
 }
 .main-logo-nav {
     position: relative;
-    float: left;
-    max-height: 100%;
-    max-width: 100%;
+    vertical-align: bottom;
+    max-height: 90%;
+    
 }
 .nav-padding {
     padding-top: 180px;
@@ -417,17 +352,21 @@ body {
     
 }
 .footer-txt {
-    color: rgba(88, 88, 88, 0.75);
-    font-size: 18px;
+    color: rgb(119, 119, 119);
+    font-size: var(--p-font);
     margin: none;
     padding: 8px 15px;
     line-height: 1.2em; 
 }
+.footer-hover:hover {
+    background-color: rgba(0, 0, 0, 0.25); 
+    color: rgb(85, 85, 85);
+}
 
 .to-top {
     display: block;
-    color: gray;
-    font-size: 18px;
+    color: rgb(119, 119, 119);
+    font-size: var(--p-font);
     text-decoration: none;
     line-height: .25em;
 }
@@ -435,7 +374,9 @@ body {
     padding-top: 100px;
     padding-bottom: 10px;
 }
-
+.up-footer {
+    height: 12px;
+}
 
 .bio-container {
     text-align: center;
@@ -467,7 +408,7 @@ body {
 }
 #bio-name{color: var(--scarlet-color)}
 #bio-year{color: var(--teal-color);}
-#bio-bio{color: black; font-size: 20px;}
+#bio-bio{color: black; font-size: var(--p-font);}
 
 .bio-name-box{
     text-align: left;
@@ -483,6 +424,7 @@ body {
     min-width: 100%; */
     max-height: 100%;
     max-width: 100%;
+    object-fit: contain;
 }
 
 .year-tab-box{
@@ -493,7 +435,7 @@ body {
     padding: 5px;
 }
 .year-tab {
-    font-size: 25px;
+    font-size: var(--h3-font);
     text-decoration: none;
     color: var(--scarlet-color);
     display: inline-block;
@@ -538,3 +480,111 @@ body {
 .visible-year {
     display: block;
 }
+
+
+
+
+/* FOR SMALL SCREENS */
+@media (max-width:1030px){
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+    h1, #title {font-size: var(--h1-mob);}
+    h2 {font-size: var(--h2-mob);}
+    h3 {font-size: var(--h3-mob);}
+    h4 {font-size: var(--h4-mob);}
+    p {font-size: var(--p-mob);}
+    .to-top {
+        font-size: var(--p-mob);
+        line-height: 1em;
+    }
+    
+    #main-box {
+        width: 100%;
+        margin-top: 600px;
+    }
+
+    
+    #main-sub-box0 {
+        line-height: 3em;
+        margin:0px;
+        padding: 0px;
+        /* margin-top: 180px; */
+    }
+    #main-sub-box1 {
+        line-height: 3em;
+        margin:0px;
+        padding: 0px;
+        margin-top: 180px;
+    }
+    
+    #main-sub-box2 {
+        text-align: left;
+        width: 80%;
+        line-height: 3em;
+        margin:auto;
+        padding: 0px;
+    }
+    #main-pic {
+        max-width: 100%;
+        max-height: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        display: block;
+    }
+    .main-logo {
+        max-width: 550px;
+        max-height: 550px;
+    }
+    .footer-txt {
+        display: block;
+        font-size: var(--h3-mob);
+    }
+    #side-box {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        display: block;
+        padding: 0;
+    }
+    #sidebar {
+        width: 300px;
+        display: inline-block;
+        margin-top: 0px;
+        vertical-align: top;
+    }
+    .sidebar-item, .active {
+        font-size: 80px;
+        line-height: 1.1em;
+        padding: 8px 16px;
+    }
+    
+    /* .fab {font-size: 60px; line-height: 1.1em;} */
+    
+    .ig-icon {
+        vertical-align: middle;
+        height: 80px;
+    }
+    .up-footer {
+        height: 36px;
+    }
+    .up-nav {
+        height: 40px;
+        color: white;
+    }
+    .scroll-opacity {
+        opacity: 0;
+    }
+    .w3-hide-small{display:none!important}
+    .w3-mobile{display:block;width:100%!important}
+}
+/* @media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}} */
+@media (min-width:1030px){
+    .w3-hide-large{display:none!important}
+    #side-box {display: block}
+    .visuallyhidden {
+        opacity: 100;
+    }
+}
+/* @media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}} */

@@ -26,7 +26,7 @@ document.body.onload = function () {
     else if (title == "B2 - suites") { 
         document.getElementById('sb-suites').classList = "active";
     }
-    else if (title == "B2 - calendar") {
+    else if (title == "B2 - events") {
         document.getElementById('sb-calendar').classList = "active";
     }
     else if (title == "B2 - kosher") {
@@ -62,7 +62,7 @@ document.body.onload = function () {
 
 
 
-var extra = 30;
+var extra = 45;
 
 function scrollFunction() {
     if (window.innerWidth < 1030) {

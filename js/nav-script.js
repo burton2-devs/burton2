@@ -10,7 +10,6 @@ var y, h, nav, navmob, sb, logo, hoverPath;
 var hmob = 180;
 
 document.body.onload = function () {
-    
     console.log("1 loaded");
     nav = document.getElementById("side-box");
     sb = document.getElementsByClassName("sidebar-item");
@@ -54,7 +53,7 @@ document.body.onload = function () {
         console.log("hover")  
         logo.src = "img/main_logo.png" 
         // logo.style.opacity = "0";
-})
+    })
 
 }
 

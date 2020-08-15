@@ -1,51 +1,42 @@
 <!doctype html>
-
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Burton 2</title>
-	<meta name="description" content="a website for the second floor of Burton-Conner, B2">
-	<link rel="icon" href="img/icon.png">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/script.js"></script>
+	<head>
+		<!-- INCLUDE NAVIGATION -->
+		<!-- <navigation id="top" w3-include-HTML="include/navigation.html"></navigation>
+		<navigation id="top" w3-include-HTML="include/navigation-mobile.html"></navigation> -->
+		<script src="js/nav-script.js"></script>
+		<!-- INCLUDE RIGHT SIDEBAR -->
+		<!-- <script>w3.includeHTML();</script> -->
+		<!-- <div id="top" w3-include-HTML="include/right-sidebar.html"></div> -->
 
-	<!-- fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:Regular,Bold,Semibold">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#top').load('include/navigation.html');
+				$('head').load('include/head.html')
+			});
+		</script>
+	</head>
 
-	<!-- ig icon -->
-	<script src="https://kit.fontawesome.com/8a31913980.js" crossorigin="anonymous"></script> 
-</head>
+	<body>
+		<!-- MAIN STUFF -->
+		<div id="top"></div>
+		<div id="main-box">
+			<div id="main-sub-box0">
+			<h1 id="title" class="tealColor">Welcome to Burton 2!</h1>
+			</div>
 
+			<div id="main-sub-box1">
+			<img id="main-pic" src="img/floorpic.jpeg" width="700">
+			</div>
 
-<!-- INCLUDE NAVIGATION -->
-<navigation id="top" w3-include-HTML="include/navigation.html"></navigation>
-<navigation id="top" w3-include-HTML="include/navigation-mobile.html"></navigation>
-<script>w3.includeHTML();</script>
-<script src="js/nav-script.js"></script>
-<!-- INCLUDE RIGHT SIDEBAR -->
-<div id="top" w3-include-HTML="include/right-sidebar.html"></div>
-
-
-<body>
-	<!-- MAIN STUFF -->
-	<div id="main-box">
-		<div id="main-sub-box0">
-		<h1 id="title" class="tealColor">Welcome to Burton 2!</h1>
+			<div id="main-sub-box2">
+			<h3>About the Floor</h3>
+			<p>Hello, we are the second floor of the Burton side of Burton-Conner! wowww. Lorem ipsum dolor sit amet,  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut  ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreeLorem ipsum dolor sit amet, elit, sed diam nonummy nibh euismod tincidunt ut laoreeLorem ipsum  sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreelaoreet dolore  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip e in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et </p>
+			</div> 
 		</div>
 
-		<div id="main-sub-box1">
-		<img id="main-pic" src="img/floorpic.jpeg" width="700">
-		</div>
-
-		<div id="main-sub-box2">
-		<h3>About the Floor</h3>
-		<p>Hello, we are the second floor of the Burton side of Burton-Conner! wowww. Lorem ipsum dolor sit amet,  adipiscing elit, sed diam nonummy nibh euismod tincidunt ut  ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreeLorem ipsum dolor sit amet, elit, sed diam nonummy nibh euismod tincidunt ut laoreeLorem ipsum  sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreelaoreet dolore  aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip e in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et </p>
-		</div> 
-	</div>
-</body>
-
-<!-- INCLUDE FOOTER -->
-<footer w3-include-HTML="include/footer.html"></footer>
-
-
+		<!-- INCLUDE FOOTER -->
+		<footer w3-include-HTML="include/footer.html"></footer>
+	</body>
 </html>

@@ -50,6 +50,7 @@ body,p,h1,h2,h3,h4,h5,h6 {font-family: 'Josefin Sans', serif; } /* change to san
 h1, #title {
     font-size: var(--h1-font);
     font-weight: 700;
+    line-height: 1em;
 }
 h2 {
     font-size: var(--h2-font);
@@ -150,11 +151,21 @@ body {
     vertical-align: middle;
     height: 32px;
 }
-.sidebar-item:hover, .active:hover {
-    color: var(--pink-color);
+.ig-icon-footer {
+    vertical-align: middle;
+    padding-bottom: 3px;
+    height: 20px;
+}
+.sidebar-item:hover {
+    /* color: var(--pink-color); */
+    text-decoration: underline;
     background-color: rgba(0, 0, 0, 0.25);
 
 }
+.active:hover {
+    /* color: var(--pink-color); */
+    text-decoration: underline;
+} 
 .active {
     font-size: var(--h3-font);
     font-weight: 700;
@@ -186,8 +197,9 @@ body {
     width: 100%;
 }
 #main-sub-box0 {
-    margin:0px;
-    padding: 0px;
+    margin-left: var(--sidebar-width);
+    margin-right: var(--sidebar-width);
+    padding: 10px 10px;
 }
 #main-sub-box1 {
     line-height: 3em;
@@ -197,13 +209,13 @@ body {
 }
 #main-sub-box2 {
     text-align: left;
-    width: 600px;
+    width: 51%;
     margin: auto;
     line-height: 1em;
     /* margin-left: var(--sidebar-width);
     margin-right: var(--sidebar-width); */
-    padding-left: var(--sidebar-width);
-    padding-right: var(--sidebar-width);
+    /* padding-left: 100px;
+    padding-right: 100px; */
 }
 
 
@@ -325,6 +337,7 @@ body {
     /* border: red 2px dashed; */
     float: left;
     max-height: 100%;
+    padding-top: 1px;
     
 }
 .nav-padding {
@@ -364,6 +377,12 @@ body {
     font-size: var(--p-font);
     text-decoration: none;
     line-height: .25em;
+    margin: 5px;
+}
+.to-top:hover {
+    color: rgb(119, 119, 119);
+    text-decoration: underline;
+
 }
 #to-top-div {
     padding-top: 100px;
@@ -443,7 +462,8 @@ body {
     outline:none;
 }
 .year-tab:hover {
-    background-color: var(--pink-color);
+    /* background-color: var(--pink-color); */
+    text-decoration: underline;
 }
 
 
@@ -515,7 +535,7 @@ body {
         height: auto;
         margin:0px;
         padding: 0px;
-        margin-top: 180px;
+        /* margin-top: 0px; */
     }
     
     #main-sub-box2 {
@@ -525,16 +545,18 @@ body {
         margin:auto;
         padding: 0px;
     }
-    #main-pic {
+    
+    #main-pic, .img-full {
         max-width: 100%;
         max-height: 100%;
         min-width: 100%;
         min-height: 100%;
         display: block;
+        text-align:center;
     }
     .main-logo {
-        max-width: 550px;
-        max-height: 550px;
+        /* max-width: 550px; */
+        max-height: 630px;
     }
     .footer-txt {
         display: block;
@@ -563,6 +585,10 @@ body {
     
     .ig-icon {
         vertical-align: middle;
+        height: 80px;
+    }
+    .ig-icon-footer {
+        padding-bottom: 0px;
         height: 80px;
     }
     .up-footer {
@@ -655,5 +681,33 @@ body {
     .visuallyhidden {
         opacity: 100;
     }
+}
+
+/* FOR VERY SMALL SCREENS */
+/* STACKED NAV BAR */
+@media (max-width:1030px){
+    #main-box {
+        width: 100%;
+        margin-top: 1350px;
+    }
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+    h1, #title {font-size: 85px;}
+    h2 {font-size: 65px;}
+    h3 {
+        font-size: 55px;
+        margin-bottom: -40px;
+    }
+    h4 {font-size: 40px;}
+    p {font-size: 40px;}
+    .to-top {
+        font-size: 50px;
+        line-height: 1em;
+    }
+    .mob-nav {
+        width: 100%;
+        height: 155px;
 }
 /* @media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}} */

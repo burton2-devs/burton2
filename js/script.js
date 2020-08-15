@@ -2,6 +2,12 @@ window.onbeforeunload = function () {
 	window.scrollTo(0, 0);
 }
 
+// intervalID = setInterval( function() {
+//   var w = window.innerWidth;
+//   var title = document.getElementById("title");
+//   title.innerHTML = w;
+// }, 50)
+
 
 var PASSWORD = "2cans";
 var PASSWORDalt = "2CANS";

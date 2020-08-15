@@ -26,7 +26,7 @@ document.body.onload = function () {
         document.getElementById('sb-suites').classList = "active";
     }
     else if (title == "B2 - events") {
-        document.getElementById('sb-calendar').classList = "active";
+        document.getElementById('sb-events').classList = "active";
     }
     else if (title == "B2 - kosher") {
         document.getElementById('sb-kosher').classList = "active";

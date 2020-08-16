@@ -4,7 +4,7 @@
     --pink-color: rgb(255, 144, 159);
     --scarlet-color: rgb(158, 16, 71);
     --gray-color: rgb(198, 204, 204);
-    --sidebar-width: 230px;
+    --sidebar-width: 215px;
     --small-screen-width: 830px;
     --h1-font: 60px;
     --h2-font: 40px;
@@ -107,10 +107,24 @@ body {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow: scroll;
+    /* overflow: hidden; Disable horizontal scroll */
     background-color: var(--scarlet-color);
     transition: .2s;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
 #side-box2 {
     text-align: center;
     height: 100%; /* Full-height: remove this if you want "auto" height */

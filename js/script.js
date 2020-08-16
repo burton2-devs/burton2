@@ -5,7 +5,7 @@ window.onbeforeunload = function () {
 intervalID = setInterval( function() {
   var w = window.innerWidth;
   var title = document.getElementById("title");
-  title.innerHTML = w;
+  title.innerHTML = "Burton 2"+w;
 }, 50)
 
 

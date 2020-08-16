@@ -334,10 +334,11 @@ body {
     /* vertical-align: middle; */
     text-align: left;
     background-color: var(--scarlet-color);
-}
-.mob-nav-fill {
     opacity: 0;
     transition: .4s;
+}
+.mob-nav-visible {
+    opacity: 1;
 }
 #nav-title {
     font-size: 111px;

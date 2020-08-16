@@ -2,9 +2,6 @@
 // fade in smaller navigation bar
 // window.onscroll = function() {scrollFunction()};
 
-window.addEventListener("scroll", scrollFunction);
-
-
 
 var y, h, nav, navmob, sb, logo, hoverPath;
 var hmob = 180;
@@ -57,24 +54,40 @@ document.body.onload = function () {
 
 
 
+// FADES IN SMALL NAV WHEN SCROLLING DOWN ON SMALL SCREENS [OLD VERSION W/OUT JQUERY]
+// window.addEventListener("scroll", scrollFunction);
 
-var extra = 45;
 
-function scrollFunction() {
-    if (window.innerWidth < 1030) {
-        nav = document.getElementById("side-box");
-        h = nav.offsetHeight;
-        y = h - hmob;
-        h = h - extra
+
+// var extra = 45;
+
+// function scrollFunction() {
+//     if (window.innerWidth < 1030) {
+//         nav = document.getElementById("side-box");
+//         h = nav.offsetHeight;
+//         y = h - hmob;
+//         h = h - extra
         
-        let scroll = document.documentElement.scrollTop;
+//         let scroll = document.documentElement.scrollTop;
 
-        if (scroll > h) {
-            document.getElementById('mobile-nav').style.opacity = '1';
-        }
-        if (scroll < h) {
-            document.getElementById('mobile-nav').style.opacity = '0';
-        }
-    }    
-}
+//         if (scroll > h) {
+//             document.getElementById('mobile-nav').style.opacity = '1';
+//         }
+//         if (scroll < h) {
+//             document.getElementById('mobile-nav').style.opacity = '0';
+//         }
+//     }    
+// }
 
+
+// FADES IN SMALL NAV WHEN SCROLLING DOWN ON SMALL SCREENS
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if($(window).scrollTop() >= 580) {
+            $('#mobile-nav').addClass('mob-nav-visible');
+        }
+        else {
+            $('#mobile-nav').removeClass('mob-nav-visible');
+        }
+    });
+});

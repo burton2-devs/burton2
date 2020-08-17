@@ -2,11 +2,11 @@ window.onbeforeunload = function () {
 	window.scrollTo(0, 0);
 }
 
-intervalID = setInterval( function() {
-  var w = window.innerWidth;
-  var title = document.getElementById("title");
-  title.innerHTML = "Burton 2 "+w;
-}, 50)
+// intervalID = setInterval( function() {
+//   var w = window.innerWidth;
+//   var title = document.getElementById("title");
+//   title.innerHTML = "Burton 2 "+w;
+// }, 50)
 
 
 var PASSWORD = "2cans";

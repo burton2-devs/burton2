@@ -79,11 +79,17 @@ document.body.onload = function () {
 //     }    
 // }
 
+var cutoff;
 
 // FADES IN SMALL NAV WHEN SCROLLING DOWN ON SMALL SCREENS
 $(document).ready(function() {
     $(window).scroll(function() {
-        if($(window).scrollTop() >= 580) {
+        if (window.innerWidth > 950) {
+            cutoff = 580;
+        } else {
+            cutoff = 1215;
+        }
+        if($(window).scrollTop() >= cutoff) {
             $('#mobile-nav').addClass('visible');
             $('#side-box').addClass('invisible');
         }

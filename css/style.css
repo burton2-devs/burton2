@@ -110,7 +110,7 @@ body {
     overflow: scroll;
     /* overflow: hidden; Disable horizontal scroll */
     background-color: var(--scarlet-color);
-    transition: .2s;
+    transition: .3s;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -337,8 +337,11 @@ body {
     opacity: 0;
     transition: .4s;
 }
-.mob-nav-visible {
+.visible {
     opacity: 1;
+}
+.invisible {
+    opacity: 0;
 }
 #nav-title {
     font-size: 111px;
@@ -352,7 +355,7 @@ body {
     /* border: red 2px dashed; */
     float: left;
     max-height: 100%;
-    padding-top: 1px;
+    padding-top: 2px;
     
 }
 .nav-padding {
@@ -687,6 +690,9 @@ body {
         max-width: 100%;
         object-fit: contain;
     }
+    #title {
+        color: red;
+    }
     .w3-hide-small{display:none!important}
     .w3-mobile{display:block;width:100%!important}
 }
@@ -703,6 +709,9 @@ body {
 /* STACKED NAV BAR */
 @media (max-width:970px){.main-logo {max-height: 600px;}}
 @media (max-width:950px){
+    #title {
+        color: orange;
+    }
     #main-box {
         width: 100%;
         margin-top: 1350px;

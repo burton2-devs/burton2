@@ -84,10 +84,12 @@ document.body.onload = function () {
 $(document).ready(function() {
     $(window).scroll(function() {
         if($(window).scrollTop() >= 580) {
-            $('#mobile-nav').addClass('mob-nav-visible');
+            $('#mobile-nav').addClass('visible');
+            $('#side-box').addClass('invisible');
         }
         else {
-            $('#mobile-nav').removeClass('mob-nav-visible');
+            $('#mobile-nav').removeClass('visible');
+            $('#side-box').removeClass('invisible');
         }
     });
 });

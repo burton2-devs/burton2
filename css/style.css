@@ -11,11 +11,11 @@
     --h3-font: 30px;
     --h4-font: 25px;
     --p-font: 20px;
-    --h1-mob: 100px;
-    --h2-mob: 80px;
-    --h3-mob: 70px;
-    --h4-mob: 62px;
-    --p-mob: 55px;
+    --h1-mob: 120px;
+    --h2-mob: 90px;
+    --h3-mob: 76px;
+    --h4-mob: 66px;
+    --p-mob: 60px;
 }
 /* body {
     padding: 0px;
@@ -248,7 +248,9 @@ body {
     /* padding-left: 100px;
     padding-right: 100px; */
 }
-
+#main-pic-box {
+    margin: 0;
+}
 
 
 .main-logo{
@@ -279,28 +281,6 @@ body {
     margin-bottom: 50px;
     /* margin-left: 15px; */
 }
-.pw-btn {
-    padding:40px;
-    font-size: 30px;
-    color: white;
-    background-color: var(--teal-color);
-}
-
-.pw-btn:hover {
-    color: rgb(168, 168, 168);
-    background-color: rgb(29, 134, 129);;
-}
-
-
-/* delete */
-
-#message {
-    color: rgb(158, 16, 71);
-    font-family: sans-serif;
-    font-size: 25px;
-}
-
-
 
 .w3-hide{display:none!important}
 
@@ -567,6 +547,10 @@ footer {
     .to-top {
         font-size: var(--p-mob);
         line-height: 1em;
+        font-weight: 600;
+    }
+    .to-top:hover {
+        color: var(--gray-color)
     }
     #main-box {
         width: 100%;
@@ -577,14 +561,13 @@ footer {
     #main-sub-box0 {
         line-height: 3em;
         margin:0px;
-        padding: 0px;
-        /* margin-top: 180px; */
+        padding: 0px 20px;
     }
     #main-sub-box1 {
         line-height: 6.5em;
         height: auto;
         margin:0px;
-        padding: 0px;
+        padding: 0px 20px;
         /* margin-top: 0px; */
     }
     
@@ -597,10 +580,9 @@ footer {
     }
     
     #main-pic, .img-full {
-        max-width: 100%;
-        max-height: 100%;
+        /* max-width: 10%; */
         min-width: 100%;
-        min-height: 100%;
+        /* min-height: 100%; */
         display: block;
         text-align:center;
     }

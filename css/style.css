@@ -3,7 +3,7 @@
     --green-color: rgb(0, 83, 69);
     --pink-color: rgb(255, 144, 159);
     --scarlet-color: rgb(158, 16, 71);
-    --gray-color: rgb(198, 204, 204);
+    --gray-color: rgb(119, 119, 119);
     --sidebar-width: 215px;
     --small-screen-width: 830px;
     --h1-font: 60px;
@@ -111,7 +111,7 @@ a:hover {color: var(--scarlet-color);}
 
 body {
     text-align: center;
-    /* background-color: var(--gray-color); */
+    margin-bottom: 0px;
 }
 
 #side-box {
@@ -268,11 +268,16 @@ body {
     font-size: 40px;
 } */
 
-#rightbar2 {
-    position: relative;
-    margin-top: 200px;
-    background-color: var(--scarlet-color);
-
+#rightbar {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    /* margin-top: 200px; */
+    /* background-color: var(--teal-color); */
+    /* border: yellowgreen 3px dashed; */
+    bottom: 0;
+    margin-bottom: 50px;
+    /* margin-left: 15px; */
 }
 .pw-btn {
     padding:40px;
@@ -379,17 +384,17 @@ body {
 .bio-text-box {
     border: blue dashed 3px;
 } */
+
+footer {
+    background-color: pink;
+}
 .footer-div {
-    background-color: rgb(196, 196, 196);
-    /* height: 80px; */
+    background-color: var(--teal-color);
     width:100%;
-    margin-bottom: -40px;
     padding: 20px 0px;
-    /* padding-top: 10px; */
-    
 }
 .footer-txt {
-    color: rgb(119, 119, 119);
+    color: rgba(0, 0, 0, 0.5);
     font-size: var(--p-font);
     margin: none;
     padding: 8px 15px;
@@ -397,19 +402,19 @@ body {
 }
 .footer-hover:hover {
     background-color: rgba(0, 0, 0, 0.25); 
-    color: rgb(85, 85, 85);
+    color: rgba(0, 0, 0, 0.75);
 }
 
 .to-top {
     display: block;
-    color: rgb(119, 119, 119);
+    color: var(--gray-color);
     font-size: var(--p-font);
     text-decoration: none;
     line-height: .25em;
     margin: 5px;
 }
 .to-top:hover {
-    color: rgb(119, 119, 119);
+    /* color: var(--teal-color); */
     text-decoration: underline;
 
 }
@@ -530,9 +535,14 @@ body {
 .visible-year {
     display: block;
 }
-
-
-
+#residents-btn {
+    background-color: var(--scarlet-color);
+    color:white; 
+    font-size: 20px; 
+    text-decoration: none; 
+    vertical-align: bottom; 
+    padding: 4px 10px;
+}
 
 /* FOR SMALL SCREENS */
 @media (max-width:1030px){

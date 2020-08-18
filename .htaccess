@@ -1,0 +1,5 @@
+<Files "residents.html">
+AuthType SSLCert
+Require group burton2
+ErrorDocument 401 /__scripts/needcerts
+</Files>

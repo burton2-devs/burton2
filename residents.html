@@ -3,12 +3,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>B2 - access</title>
-	<meta name="description" content="a website for the second floor of Burton-Conner, B2">
+	<title>Residents Only</title>
 	<link rel="icon" href="img/icon.png">
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/script.js"></script>
-
 	<!-- fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:,Regular,Bold,Semibold">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@375&display=swap" rel="stylesheet">
@@ -18,14 +15,12 @@
 <!-- INCLUDE NAVIGATION -->
 <navigation id="top" w3-include-HTML="include/navigation.html"></navigation>
 <navigation id="top" w3-include-HTML="include/navigation-mobile.html"></navigation>
-<script>w3.includeHTML();</script>
-<script src="js/nav-script.js"></script>
 <!-- INCLUDE RIGHT SIDEBAR -->
 <div id="top" w3-include-HTML="include/right-sidebar.html"></div>
 
 
-<body style="background-color:rgb(158, 16, 71); color:white">
 <!-- MAIN STUFF -->
+<body style="background-color:rgb(158, 16, 71); color:white">
   <div id="main-box">
     <div id="main-sub-box1">
       <h1 id="title" class="tealColor">About Our Floor</h1>
@@ -33,20 +28,26 @@
 
     <div id="main-sub-box2">
       <h3>For Residents Only</h3>
-      <p>Hello fellow toucan, welcome to secret page</p>
-      <h4>
+      <p>i need to figure out how to restrict this</p>
+      <!-- <h4>
         If you wanna update your bio:
       </h4>
-      <a href="https://docs.google.com/document/d/1IXSZMaYvYAHFWLKjacb9xPKvaDb9Yybk3Alk62mtdEw/edit?usp=sharing" target="_blank">https://docs.google.com/document/d/1IXSZMaYvYAHFWLKjacb9xPKvaDb9Yybk3Alk62mtdEw/edit?usp=sharing</a>
+      <a href="https://docs.google.com/document/d/1IXSZMaYvYAHFWLKjacb9xPKvaDb9Yybk3Alk62mtdEw/edit?usp=sharing" target="_blank">https://docs.google.com/document/d/1IXSZMaYvYAHFWLKjacb9xPKvaDb9Yybk3Alk62mtdEw/edit?usp=sharing</a> -->
     </div> 
   </div>
-  
 </body>
 
 
 <!-- INCLUDE FOOTER -->
 <div class="w3-hide-small" w3-include-HTML="include/to_top_large.html"></div>
 <div class="w3-hide-large" w3-include-HTML="include/to_top_small.html"></div>
-<footer w3-include-HTML="include/footer.html"></footer>
+<footer w3-include-HTML="/include/footer.html"></footer>
+
+<!-- SCRIPTS -->
+<script src="js/script.js"></script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script>w3.includeHTML();</script>
+<script src="js/nav-script.js"></script>
+
 
 </html>

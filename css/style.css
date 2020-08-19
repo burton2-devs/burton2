@@ -251,6 +251,11 @@ body {
 #main-pic-box {
     margin: 0;
 }
+#main-pic {
+    opacity: 1;
+    transition: .4s;
+    max-height: 455px;
+}
 
 
 .main-logo{
@@ -524,6 +529,9 @@ footer {
     padding: 4px 10px;
 }
 
+
+
+
 /* FOR SMALL SCREENS */
 @media (max-width:1030px){
     body {
@@ -580,9 +588,8 @@ footer {
     }
     
     #main-pic, .img-full {
-        /* max-width: 10%; */
+        max-height: 100%;
         min-width: 100%;
-        /* min-height: 100%; */
         display: block;
         text-align:center;
     }

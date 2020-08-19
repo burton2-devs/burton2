@@ -1,15 +1,8 @@
-// var paths = [
-//     'img/floorpic.jpg',
-//     'img/flounge.jpg',
-//     'img/retreat1.jpg',
-//     'img/peanuts.jpg',
-//     'img/retreat2.jpg'
-// ];
 var paths = [
     'img/floorpic.jpg',
-    'img/wow2.jpeg',
+    'img/flounge.jpg',
     'img/retreat1.jpg',
-    'img/wow1.jpeg',
+    'img/peanuts.jpg',
     'img/retreat2.jpg'
 ];
 const initialLength = paths.length;

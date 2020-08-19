@@ -151,7 +151,7 @@ w3.toggleClassElement = function (element, c1, c2) {
 	}
   } else {
 	allPresent = true;
-	for (j = 0; j < t1Arr.length; j++) {
+	for (j = 0; j < t1Arr.length; j++) { 
 	  if (arr.indexOf(t1Arr[j]) == -1) {allPresent = false;}
 	}
 	if (allPresent) {

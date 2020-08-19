@@ -1,12 +1,12 @@
 var paths = [
-    'img/floorpic.jpg',
+    'img/floorpic.jpeg',
     'img/flounge.jpg',
     'img/retreat1.jpg',
     'img/peanuts.jpg',
     'img/retreat2.jpg'
 ];
-const initialLength = paths.length;
-const initialTime = 40; //transition time where 10 = 1s
+var initialLength = paths.length;
+var initialTime = 40; //transition time where 10 = 1s
 var wowPaths = [
     'img/wow1.jpeg',
     'img/wow2.jpeg',
@@ -36,13 +36,13 @@ var time = initialTime;
 function slideshow() {
     var i = 0;
     var intervalID = setInterval( function() {
-        if (i == time-5) {
+        if (i == time) {
             fade_out();
         }
-        else if (i == time+1) {
+        else if (i == time+6) {
             changeImg();
         }
-        else if (i == time+2) {
+        else if (i == time+7) {
             fade_in();
         }
         if (removeWow == true) {
@@ -53,8 +53,8 @@ function slideshow() {
             }
         }
         i++;
-        if (i >= time+3) {
-            i = i - time+3;
+        if (i >= time+8) {
+            i = i - time+8;
         }
 
 
@@ -74,7 +74,7 @@ function changeImg() {
     if (z >= paths.length) {
         z = z - paths.length;
         wow +=1;
-            if (wow == 3) {
+            if (wow == 2) {
                 paths.push(wowPaths[wowwow]);
                 wowwow +=1;
                 if (wowwow >= wowPaths.length) {
@@ -83,7 +83,6 @@ function changeImg() {
                 wow = 0;
                 removeWow = true;
             }
-    }
-    
+    }    
     pic.src = paths[z];
 }

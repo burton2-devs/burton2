@@ -55,6 +55,8 @@ h1, #title {
 }
 h2 {
     font-size: var(--h2-font);
+    line-height: 1.4em;
+    margin-bottom: -10px;
 }
 h3, .h3 {
     font-size: var(--h3-font);
@@ -277,17 +279,23 @@ body {
 } */
 
 #rightbar {
+    text-align: center;
+    width: 100%;
+}
+#esc {
+    text-align: center;
+    width: 100%;
+    /* background-color: var(--teal-color); */
+    color: var(--teal-color);
+    /* margin: 10px; */
+}
+#rightbar2 {
     position: absolute;
     text-align: center;
     width: 100%;
-    /* margin-top: 200px; */
-    /* background-color: var(--teal-color); */
-    /* border: yellowgreen 3px dashed; */
     bottom: 0;
     margin-bottom: 50px;
-    /* margin-left: 15px; */
 }
-
 .w3-hide{display:none!important}
 
 
@@ -428,6 +436,7 @@ footer {
     width: 20% ;
     height: 100% ;
     text-align: right;
+    padding-right: 10px;
 }
 .bio-text-box {
     display: inline-block;

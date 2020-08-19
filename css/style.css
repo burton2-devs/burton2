@@ -11,11 +11,12 @@
     --h3-font: 30px;
     --h4-font: 25px;
     --p-font: 20px;
+
     --h1-mob: 120px;
-    --h2-mob: 90px;
-    --h3-mob: 76px;
-    --h4-mob: 66px;
-    --p-mob: 60px;
+    --h2-mob: 86px;
+    --h3-mob: 72px;
+    --h4-mob: 60px;
+    --p-mob: 54px;
 }
 /* body {
     padding: 0px;
@@ -575,7 +576,7 @@ footer {
         line-height: 6.5em;
         height: auto;
         margin:0px;
-        padding: 0px 20px;
+        padding: 0px 40px;
         /* margin-top: 0px; */
     }
     

@@ -9,35 +9,6 @@ window.onbeforeunload = function () {
 // }, 50)
 
 
-var PASSWORD = "2cans";
-var PASSWORDalt = "2CANS";
-
-
-function password() {
-	var pw = document.getElementById("pword").value;
-	
-	if (pw == PASSWORD || pw == PASSWORDalt){
-        window.location.href = "index2.html ";
-    }
-    else {
-        console.log("wrong password");
-        console.log(pw);
-	}
-}
-
-
-// submits password with the enter key
-document.addEventListener("keypress", function(event) {
-	// Number 13 is the "Enter" key on the keyboard
-	if (event.key === "Enter") {
-	  // Cancel the default action, if needed
-	  event.preventDefault();
-	  // Trigger the button element with a click
-	  document.getElementById("submitButton").click();
-	}
-});
-
-	
 
 
 

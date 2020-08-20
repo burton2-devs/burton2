@@ -1,67 +1,55 @@
 <!doctype html>
-
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>B2 - people</title>
-  <meta name="description" content="the residents of B2">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
+	<head>
+		<title>Burton 2 | People</title>
 
-<!-- fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kulim+Park:Regular,Bold,Semibold">
-
-<!-- ig icon -->
-<script src="https://kit.fontawesome.com/8a31913980.js" crossorigin="anonymous"></script> 
-
-</head>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('head').load('include/head.html')
+				$('#top').load('include/navigation.html');
+			});
+		</script>
+	</head>
 
 <!-- INCLUDE NAVIGATION -->
-<navigation id="top" w3-include-HTML="include/navigation.html"></navigation>
+<!-- <navigation id="top" w3-include-HTML="include/navigation.html"></navigation>
 <navigation id="top" w3-include-HTML="include/navigation-mobile.html"></navigation>
-<script>w3.includeHTML();</script>
-<script src="js/nav-script.js"></script>
+<script>w3.includeHTML();</script> -->
+<!-- <script src="js/nav-script.js"></script> -->
 <!-- INCLUDE RIGHT SIDEBAR -->
-<div id="top" w3-include-HTML="include/right-sidebar.html"></div>
+<!-- <div id="top" w3-include-HTML="include/right-sidebar.html"></div> -->
 
+	<body>
+		<!-- MAIN STUFF -->
+		<div id="main-box">
+			<div id="main-sub-box1">
+				<h1 id="title" class="tealColor">People</h1>
+			</div>
 
+			<br>
 
+			<div id="sticky-tab" class="year-tab-box">
+				<script src="js/sticky.js"></script>
+				<button id="year1" class="year-tab year-active" onclick="year1()">current</button>
+				<button id="year2" class="year-tab" onclick="year2()">2021</button>
+				<button id="year3" class="year-tab" onclick="year3()">2022</button>
+				<button id="year4" class="year-tab" onclick="year4()">2023</button>
+				<button id="year5" class="year-tab" onclick="year5()">alumni</button>
+				<!-- <a href="edit-bio.html" class="year-tab" id="edit-bio">edit bio</a> -->
+			</div>
 
-<body>
-<!-- MAIN STUFF -->
-  <div id="main-box">
-    <div id="main-sub-box1">
-      <h1 id="title" class="tealColor">People</h1>
-    </div>
-    <br>
-    <div id="sticky-tab" class="year-tab-box">
-      <script src="js/sticky.js"></script>
-      <button id="year1" class="year-tab year-active" onclick="year1()">current</button>
-      <button id="year2" class="year-tab" onclick="year2()">2021</button>
-      <button id="year3" class="year-tab" onclick="year3()">2022</button>
-      <button id="year4" class="year-tab" onclick="year4()">2023</button>
-      <button id="year5" class="year-tab" onclick="year5()">alumni</button>
-      <!-- <a href="edit-bio.html" class="year-tab" id="edit-bio">edit bio</a> -->
-    </div>
+			<div id="all-bio-container">
+				<!-- <div id="bio-content" w3-include-HTML="include/bio.html"></div> -->
+				<div id="bio1" w3-include-HTML="include/bio.html" class="biography visible-year"></div>
+				<div id="bio2" w3-include-HTML="include/2021.html" class="biography visible-year"></div>
+				<div id="bio3" w3-include-HTML="include/2022.html" class="biography visible-year"></div>
+				<div id="bio4" w3-include-HTML="include/2023.html" class="biography visible-year"></div>
+				<div id="bio5" w3-include-HTML="include/alumni.html" class="biography visible-year"></div>
+			</div>
+		</div>
 
-    <div id="all-bio-container">
-      <!-- <div id="bio-content" w3-include-HTML="include/bio.html"></div> -->
-      <div id="bio1" w3-include-HTML="include/bio.html" class="biography visible-year"></div>
-      <div id="bio2" w3-include-HTML="include/2021.html" class="biography visible-year"></div>
-      <div id="bio3" w3-include-HTML="include/2022.html" class="biography visible-year"></div>
-      <div id="bio4" w3-include-HTML="include/2023.html" class="biography visible-year"></div>
-      <div id="bio5" w3-include-HTML="include/alumni.html" class="biography visible-year"></div>
-    </div>
-
-
-    
-  </div>
-  
-</body>
-
-
-<!-- INCLUDE FOOTER -->
-<footer w3-include-HTML="include/footer.html"></footer>
-
+		<!-- INCLUDE FOOTER -->
+		<footer w3-include-HTML="include/footer.html"></footer>
+	</body>
 </html>

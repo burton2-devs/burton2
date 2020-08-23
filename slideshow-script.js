@@ -6,7 +6,7 @@ var paths = [
     'img/retreat2.jpg'
 ];
 var initialLength = paths.length;
-var initialTime = 40; //transition time where 10 = 1s
+var initialTime = 50; //transition time where 10 = 1s
 var wowPaths = [
     'img/wow1.jpeg',
     'img/wow2.jpeg',

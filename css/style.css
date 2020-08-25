@@ -47,7 +47,7 @@ p {font-size: 45px;}
 }
 
 /* Josefin Sans variable font weight (range: 100-700) */
-body {font-family: 'Josefin Sans', serif; } /* change to sans-serif when readt */
+body, button {font-family: 'Josefin Sans', serif;} /* change to sans-serif when readt */
 h1, #title {
     font-size: var(--h1-font);
     font-weight: 700;
@@ -85,7 +85,18 @@ strong {
 a {
     color: var(--teal-color);
 }
-a:hover {color: var(--scarlet-color);}
+a:hover {color: var(--scarlet-color); transition: .2s;}
+button {
+    background-color: var(--scarlet-color);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 6px 12px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 17px;
+}
 /* borders */
 /* #main-box {
     border: blue 2px solid;
@@ -199,12 +210,13 @@ body {
     text-decoration: underline;
     background-color: rgba(0, 0, 0, 0.25);
     color: white;
-
+    transition: .2s;
 }
 .active:hover {
     /* color: var(--pink-color); */
     text-decoration: underline;
     color: white;
+    transition: .2s;
 } 
 .active {
     font-size: var(--h3-font);
@@ -216,16 +228,6 @@ body {
     margin: none;
     padding: 8px 44px;
 } 
-
-.side-box-hover {
-    width: 210px;
-    height: 230px;
-    position: absolute;
-    background-color: var(--pink-color);
-    mix-blend-mode: darken;
-    opacity: 0;
-    z-index: 1;
-}
 
 
 .bc-link {
@@ -406,6 +408,7 @@ footer {
 .footer-hover:hover {
     background-color: rgba(0, 0, 0, 0.25); 
     color: rgba(0, 0, 0, 0.75);
+    transition: .2s;
 }
 
 .to-top {
@@ -419,6 +422,7 @@ footer {
 .to-top:hover {
     /* color: var(--teal-color); */
     text-decoration: underline;
+    transition: .2s;
 
 }
 #to-top-div {
@@ -460,7 +464,7 @@ footer {
 }
 #bio-name{color: var(--scarlet-color)}
 #bio-year{color: var(--teal-color);}
-#bio-bio{color: black; font-size: var(--p-font);}
+#bio-bio{color: black; font-size: var(--p-font); margin-top: 2px;}
 
 .bio-name-box{
     text-align: left;
@@ -503,6 +507,7 @@ footer {
     /* background-color: var(--pink-color); */
     text-decoration: underline;
     cursor: pointer;
+    transition: .2s;
 }
 
 
@@ -532,10 +537,38 @@ footer {
 }
 #twocan:hover {
     color: var(--scarlet-color);
+    transition: .2s;
 }
 .biography {
     display: none;
 }
+/* read more */
+#readMore {
+    display: none;
+    /* transition: 1s; */
+}
+#moreBtn, #lessBtn {
+    display: inline;
+    outline: none;
+    cursor: pointer;
+}
+#lessBtn {
+    display: none;
+}
+#moreBtn:hover, #lessBtn:hover{
+    background-color: var(--teal-color);
+    transition: .2s;
+}
+#mindy {
+    height: auto;   
+}
+.mindy-pic {
+    width: 150px;
+}
+.rm-mob {
+    margin: 4px;
+}
+
 .visible-year {
     display: block;
 }
@@ -630,6 +663,7 @@ footer {
         position: absolute;
         display: block;
         padding: 0;
+        z-index: 5;
     }
     #sidebar {
         width: 300px;
@@ -669,6 +703,7 @@ footer {
     }
     #nav-to-top:hover {
         background-color: rgba(0, 0, 0, 0.25);
+        transition: .2s;
     }
     .scroll-opacity {
         opacity: 0;
@@ -715,7 +750,11 @@ footer {
         font-weight: bold; 
         font-size: var(--p-mob);
     }
-    #bio-bio{font-size: 40px;}
+    #bio-bio {font-size: 40px;}
+    .rm-mob {
+        font-size: 32px;
+        margin: 0;
+    }
 
     .bio-name-box{
         text-align: left;
@@ -735,6 +774,20 @@ footer {
     }
     .suite-img {
         margin-top: 40px;
+    }
+    .mindy-pic {
+        width: 350px;
+    }
+    button {
+        background-color: var(--scarlet-color);
+        border: none;
+        color: white;
+        border-radius: 5px;
+        padding: 12px 16px 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline;
+        font-size: 34px;
     }
     .visible {
         opacity: 1;

@@ -8,8 +8,31 @@ window.onbeforeunload = function () {
 //   title.innerHTML = "Burton 2 "+w;
 // }, 50)
 
-
-
+function readMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("readMore");
+  var moreBtn = document.getElementById("moreBtn");
+  var lessBtn = document.getElementById("lessBtn");
+  var tempScrollTop = $(window).scrollTop();
+  dots.style.display = "none";
+  moreText.style.display = "inline";
+  $(window).scrollTop(tempScrollTop);
+  moreBtn.style.display = "none";
+  lessBtn.style.display = "inline";
+}
+function readLess() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("readMore");
+  var moreBtn = document.getElementById("moreBtn");
+  var lessBtn = document.getElementById("lessBtn");
+  var tempScrollTop = $(window).scrollTop();
+  dots.style.display = "inline";
+  moreText.style.display = "none";
+  $(window).scrollTop(tempScrollTop);
+  moreBtn.style.display = "inline";
+  lessBtn.style.display = "none";
+  
+}
 
 
 /* W3.JS 1.04 April 2019 by w3schools.com */

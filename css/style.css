@@ -48,6 +48,7 @@ p {font-size: 45px;}
 
 /* Josefin Sans variable font weight (range: 100-700) */
 body, button {font-family: 'Josefin Sans', serif;} /* change to sans-serif when readt */
+#ToucansAreSoCool {position: absolute;top: 0;z-index: 0;}
 h1, #title {
     font-size: var(--h1-font);
     font-weight: 700;

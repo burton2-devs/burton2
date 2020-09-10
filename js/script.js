@@ -31,9 +31,31 @@ function readLess() {
   $(window).scrollTop(tempScrollTop);
   moreBtn.style.display = "inline";
   lessBtn.style.display = "none";
-  
 }
-
+function readMore2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("readMore2");
+  var moreBtn = document.getElementById("moreBtn2");
+  var lessBtn = document.getElementById("lessBtn2");
+  var tempScrollTop = $(window).scrollTop();
+  dots.style.display = "none";
+  moreText.style.display = "inline";
+  $(window).scrollTop(tempScrollTop);
+  moreBtn.style.display = "none";
+  lessBtn.style.display = "inline";
+}
+function readLess2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("readMore2");
+  var moreBtn = document.getElementById("moreBtn2");
+  var lessBtn = document.getElementById("lessBtn2");
+  var tempScrollTop = $(window).scrollTop();
+  dots.style.display = "inline";
+  moreText.style.display = "none";
+  $(window).scrollTop(tempScrollTop);
+  moreBtn.style.display = "inline";
+  lessBtn.style.display = "none";
+}
 
 /* W3.JS 1.04 April 2019 by w3schools.com */
 // "use strict";

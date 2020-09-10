@@ -1,9 +1,12 @@
 :root {
+    --black-color: rgb(211, 211, 211);
     --teal-color: rgb(44, 196, 188);
     --green-color: rgb(0, 83, 69);
     --pink-color: rgb(255, 144, 159);
     --scarlet-color: rgb(158, 16, 71);
-    --gray-color: rgb(119, 119, 119);
+    --gray-color: rgb(170, 170, 170);
+    --black-50: rgba(255, 255, 255, 0.5);
+    --black-25: rgba(255, 255, 255, 0.25);
     --sidebar-width: 215px;
     --small-screen-width: 830px;
     --h1-font: 60px;
@@ -47,8 +50,7 @@ p {font-size: 45px;}
 }
 
 /* Josefin Sans variable font weight (range: 100-700) */
-body, button {font-family: 'Josefin Sans', serif;} /* change to sans-serif when readt */
-#ToucansAreSoCool {position: absolute;top: 0;z-index: 0;}
+body {font-family: 'Josefin Sans', serif; } /* change to sans-serif when readt */
 h1, #title {
     font-size: var(--h1-font);
     font-weight: 700;
@@ -86,18 +88,7 @@ strong {
 a {
     color: var(--teal-color);
 }
-a:hover {color: var(--scarlet-color); transition: .2s;}
-button {
-    background-color: var(--scarlet-color);
-    border: none;
-    color: white;
-    border-radius: 5px;
-    padding: 6px 12px 2px;
-    text-align: center;
-    text-decoration: none;
-    display: inline;
-    font-size: 17px;
-}
+a:hover {color: var(--scarlet-color);}
 /* borders */
 /* #main-box {
     border: blue 2px solid;
@@ -142,12 +133,6 @@ body {
     background-color: var(--scarlet-color);
     transition: .3s;
 }
-.tight-line {
-    margin-bottom: -20px;
-}
-.tight {
-    line-height: .9em;
-}
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .hide-scrollbar::-webkit-scrollbar {
@@ -189,7 +174,7 @@ body {
 .sidebar-item {
     font-size: var(--h3-font);
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
     display: block;
     margin: none;
     padding: 8px 44px;
@@ -209,26 +194,35 @@ body {
 .sidebar-item:hover {
     /* color: var(--pink-color); */
     text-decoration: underline;
-    background-color: rgba(0, 0, 0, 0.25);
-    color: white;
-    transition: .2s;
+    background-color: var(--black-25);
+    color: var(--white-color);
+
 }
 .active:hover {
     /* color: var(--pink-color); */
     text-decoration: underline;
-    color: white;
-    transition: .2s;
+    color: var(--white-color);
 } 
 .active {
     font-size: var(--h3-font);
     font-weight: 700;
-    color: white;
+    color: var(--white-color);
     background-color: var(--teal-color);
     text-decoration: none;
     display: block;
     margin: none;
     padding: 8px 44px;
 } 
+
+.side-box-hover {
+    width: 210px;
+    height: 230px;
+    position: absolute;
+    background-color: var(--pink-color);
+    mix-blend-mode: darken;
+    opacity: 0;
+    z-index: 1;
+}
 
 
 .bc-link {
@@ -267,8 +261,6 @@ body {
     opacity: 1;
     transition: .4s;
     max-height: 455px;
-    z-index: 0;
-    text-decoration: none;
 }
 
 
@@ -350,7 +342,7 @@ body {
     font-size: 65px;
     text-decoration: none;
     text-emphasis: none;
-    color: white;
+    color: var(--white-color);
 }
 
 .mob-nav {
@@ -363,7 +355,6 @@ body {
     background-color: var(--scarlet-color);
     opacity: 0;
     transition: .4s;
-    z-index: 2;
 }
 #nav-title {
     font-size: 111px;
@@ -400,16 +391,15 @@ footer {
     padding: 20px 0px;
 }
 .footer-txt {
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--black-50);
     font-size: var(--p-font);
     margin: none;
     padding: 8px 15px;
     line-height: 1.2em; 
 }
 .footer-hover:hover {
-    background-color: rgba(0, 0, 0, 0.25); 
+    background-color: var(--black-25); 
     color: rgba(0, 0, 0, 0.75);
-    transition: .2s;
 }
 
 .to-top {
@@ -423,7 +413,6 @@ footer {
 .to-top:hover {
     /* color: var(--teal-color); */
     text-decoration: underline;
-    transition: .2s;
 
 }
 #to-top-div {
@@ -465,7 +454,7 @@ footer {
 }
 #bio-name{color: var(--scarlet-color)}
 #bio-year{color: var(--teal-color);}
-#bio-bio{color: black; font-size: var(--p-font); margin-top: 2px;}
+#bio-bio{color: var(--black-color); font-size: var(--p-font);}
 
 .bio-name-box{
     text-align: left;
@@ -488,7 +477,7 @@ footer {
     text-align: center;
     margin-left: var(--sidebar-width);
     margin-right: var(--sidebar-width);
-    background-color: white;
+    background-color: var(--white-color);
     padding: 5px;
 }
 .year-tab {
@@ -498,7 +487,7 @@ footer {
     display: inline-block;
     margin: -4px;
     padding: 8px 22px;
-    background-color: white;
+    background-color: var(--white-color);
     border: none;
     font-family: 'Josefin Sans';
     /* border: yellowgreen 1px dashed; */
@@ -508,13 +497,12 @@ footer {
     /* background-color: var(--pink-color); */
     text-decoration: underline;
     cursor: pointer;
-    transition: .2s;
 }
 
 
 #edit-bio{
     background-color: var(--teal-color);
-    color: white;
+    color: var(--white-color);
 }
 
 #all-bio-container {
@@ -522,7 +510,7 @@ footer {
 }
 .year-active {    
     /* background-color: var(--scarlet-color); */
-    /* color: white; */
+    /* color: var(--white-color); */
     text-decoration: underline;
     font-weight: bold;
 }
@@ -538,56 +526,20 @@ footer {
 }
 #twocan:hover {
     color: var(--scarlet-color);
-    transition: .2s;
 }
 .biography {
     display: none;
 }
-/* read more */
-#readMore, #readMore2 {
-    display: none;
-    /* transition: 1s; */
-}
-#moreBtn, #lessBtn, #moreBtn2, #lessBtn2 {
-    display: inline;
-    outline: none;
-    cursor: pointer;
-}
-#lessBtn,#lessBtn2 {
-    display: none;
-}
-#moreBtn:hover, #lessBtn:hover{
-    background-color: var(--teal-color);
-    transition: .2s;
-}
-#moreBtn2:hover, #lessBtn2:hover{
-    background-color: var(--teal-color);
-    transition: .2s;
-}
-#mindy, #gwen {
-    height: auto;   
-}
-.mindy-pic {
-    width: 150px;
-}
-.rm-mob {
-    margin: 4px;
-}
-
 .visible-year {
     display: block;
 }
 #residents-btn {
     background-color: var(--scarlet-color);
-    color:white; 
+    color:var(--white-color); 
     font-size: 20px; 
     text-decoration: none; 
     vertical-align: bottom; 
     padding: 4px 10px;
-}
-.suite-img {
-    margin: auto;
-    margin-top: 20px;
 }
 
 
@@ -668,7 +620,6 @@ footer {
         position: absolute;
         display: block;
         padding: 0;
-        z-index: 5;
     }
     #sidebar {
         width: 300px;
@@ -697,7 +648,7 @@ footer {
     }
     .up-nav {
         height: 50px;
-        color: white;
+        color: var(--white-color);
         position: relative;
         top: 45px;
     }
@@ -707,8 +658,7 @@ footer {
         text-align: center;
     }
     #nav-to-top:hover {
-        background-color: rgba(0, 0, 0, 0.25);
-        transition: .2s;
+        background-color: var(--black-25);
     }
     .scroll-opacity {
         opacity: 0;
@@ -722,7 +672,7 @@ footer {
     .year-tab-box{
         text-align: center;
         margin: auto;
-        background-color: white;
+        background-color: var(--white-color);
         padding: 5px;
     }
     #sticky-tab.fixed {
@@ -755,11 +705,7 @@ footer {
         font-weight: bold; 
         font-size: var(--p-mob);
     }
-    #bio-bio {font-size: 40px;}
-    .rm-mob {
-        font-size: 40px;
-        margin: 0;
-    }
+    #bio-bio{font-size: 40px;}
 
     .bio-name-box{
         text-align: left;
@@ -777,23 +723,7 @@ footer {
         max-width: 100%;
         object-fit: contain;
     }
-    .suite-img {
-        margin-top: 40px;
-    }
-    .mindy-pic {
-        width: 350px;
-    }
-    button {
-        background-color: var(--scarlet-color);
-        border: none;
-        color: white;
-        border-radius: 5px;
-        padding: 12px 16px 8px;
-        text-align: center;
-        text-decoration: none;
-        display: inline;
-        font-size: 34px;
-    }
+    
     .visible {
         opacity: 1;
     }
